@@ -7,7 +7,8 @@ module.exports = {
         secondary: '#2E7B8F',
         bgcolorv1: '#FFFFFF',
         bgcolorv2: '#F7FBFD',
-        bgtab: '#F8F7F7;'
+        bgtab: '#F8F7F7',
+        bgcolorv3: '#ECF6F9',
       }
     },
     fontFamily:{
