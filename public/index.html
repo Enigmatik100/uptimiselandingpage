@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Uptimise landing page</title>
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <!-- start Header -->
+    <header>
+        <nav class="flex items-center  gap-9 pl-[76px] pt-9">
+            <div class=""> <a class="cursor-pointer"><img src="./images/Uptimise.svg" /></a> </div>
+            <ul class="flex-1 flex items-center gap-5">
+                <li class="nav-item relative" x-data="{dropdownOpen:false}">
+                    <a href="#">Fonctionnalités</a>
+                    <!-- dropdown -->
+                    <!--  <div class="absolute bg-primary" :class="{'hidden':!dropdownOpen}">
+                        <ul class="w-full">
+                            <li class="nav-item hover:bg-white p-3"> <a>Gestion RH</a></li>
+                            <li class="hover:bg-white p-3"> <a>Salaire</a></li>
+                            <li class="hover:bg-white p-3"> <a>Employe</a></li>
+                        </ul>
+                    </div> -->
+                    <!-- dropdown -->
+                </li>
+                <li class="nav-item">Comment ça marche</li>
+                <li class="nav-item">Offres</li>
+                <li class="nav-item">Ressources</li>
+            </ul>
+            <div class="flex items-center gap-10 mr-16">
+                <select>
+                    <option value="FR">FR</option>
+                    <option>EN</option>
+                </select>
+                <button type="button" class="btn-primary1">Nous contacter</button>
+            </div>
+        </nav>
+    </header>
+    <!-- end Header -->
+    <section class="h-full">
+        <div class="flex justify-center items-center px-24 mt-36 pb-52 sm:flex-col md:flex-col lg:flex-row xl:flex-row">
+            <div class="w-[720px]">
+                <p>
+                    <span
+                        class="font-Poppins font-bold text-5xl text-center text-[#173E48] not-italic -tracking-[.015em] leading-[72px]">
+                        Le logiciel de gestion de Ressources Humaines
+                    </span>
+                    <span
+                        class="font-Poppins font-bold text-5xl text-center not-italic -tracking-[.015em] leading-[72px] text-primary">
+                        par excellence
+                    </span>
+                </p>
+                <p class="mr-28">
+                    <span class="font-Poppins not-italic font-light text-lg leading-7">
+                        Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
+                    </span>
+                </p>
+                <div class="flex items-center pt-3">
+                    <button class="btn-primary mr-2">Demander une demo</button>
+                    <button class="btn-primary">Souscrire</button>
+                </div>
+            </div>
+            <div>
+                <img src="./images/uptimise_screen.png" class="object-cover w-full shrink-0">
+            </div>
+        </div>
+    </section>
+    <section id="qualite_produit" class="bg-bgcolorv2 h-full">
+        <div class="flex flex-col items-center px-36">
+            <div class="font-Poppins text-center">
+                <span class="font-normal text-5xl text-[#173E48] leading-[72px]"> La gestion de votre personnel en un
+                    clic </span> <br>
+                <span class="text-primary font-normal text-lg leading-[27px]"> Nemo enim ipsam voluptatem quia voluptas
+                    sit aspernatur aut odit aut fugit, sed quia </span>
+            </div>
+            <div class="flex mt-28 gap-3">
+                <img src="./images/uptimise_screenshot1.png">
+                <div class="flex flex-col gap-24">
+                    <div class="flex">
+                        <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="23.5" cy="24" r="23.5" fill="#ECF6F9" />
+                            <path
+                                d="M24 13.5L15 17.5V23.5C15 29.05 18.84 34.24 24 35.5C29.16 34.24 33 29.05 33 23.5V17.5L24 13.5ZM24 24.49H31C30.47 28.61 27.72 32.28 24 33.43V24.5H17V18.8L24 15.69V24.49Z"
+                                fill="#399AB3" />
+                        </svg>
+                        <div class="ml-7">
+                            <h2 class="body-h4"> Simplicité et efficacité </h2>
+                            <span class="body-p">
+                                Nemo enimni dolores eos qui ratione voluptatem sciunt. Neque porro quisquam est, qui
+                                dolorem.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="23.5" cy="24" r="23.5" fill="#ECF6F9" />
+                            <path
+                                d="M31.99 16.5C31.99 15.4 31.1 14.5 30 14.5H22L16 20.5V32.5C16 33.6 16.9 34.5 18 34.5H30.01C31.11 34.5 32 33.6 32 32.5L31.99 16.5V16.5ZM21 31.5H19V29.5H21V31.5ZM29 31.5H27V29.5H29V31.5ZM21 27.5H19V23.5H21V27.5ZM25 31.5H23V27.5H25V31.5ZM25 25.5H23V23.5H25V25.5ZM29 27.5H27V23.5H29V27.5Z"
+                                fill="#399AB3" />
+                        </svg>
+                        <div class="ml-7">
+                            <h2 class="body-h4"> Rapide </h2>
+                            <span class="body-p">
+                                Nemo enimni dolores eos qui ratione voluptatem sciunt. Neque porro quisquam est, qui
+                                dolorem.
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="flex">
+                        <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="23.5" cy="24" r="23.5" fill="#ECF6F9" />
+                            <path
+                                d="M24 13.5L15 17.5V23.5C15 29.05 18.84 34.24 24 35.5C29.16 34.24 33 29.05 33 23.5V17.5L24 13.5ZM24 24.49H31C30.47 28.61 27.72 32.28 24 33.43V24.5H17V18.8L24 15.69V24.49Z"
+                                fill="#399AB3" />
+                        </svg>
+                        <div class="ml-7">
+                            <h2 class="body-h4"> Sécurisé </h2>
+                            <span class="body-p">
+                                Nemo enimni dolores eos qui ratione voluptatem sciunt. Neque porro quisquam est, qui
+                                dolorem.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-44 h-full" id="">
+        <div x-data="{
+            openTab: 1,
+            activeClass: 'tab-item-active',
+            inactiveClass: ''
+        }">
+            <ul class="flex justify-center items-center space-x-12 bg-bgtab rounded mx-14">
+                <li class="tab-item cursor-pointer" @click="openTab = 1"
+                    :class="openTab === 1 ? activeClass: inactiveClass">
+                    <svg width="32" class="ml-2" height="33" viewBox="0 0 32 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 20.5H9C8.20435 20.5 7.44129 20.8161 6.87868 21.3787C6.31607 21.9413 6 22.7044 6 23.5V25.5H8V23.5C8 23.2348 8.10536 22.9804 8.29289 22.7929C8.48043 22.6054 8.73478 22.5 9 22.5H15C15.2652 22.5 15.5196 22.6054 15.7071 22.7929C15.8946 22.9804 16 23.2348 16 23.5V25.5H18V23.5C18 22.7044 17.6839 21.9413 17.1213 21.3787C16.5587 20.8161 15.7956 20.5 15 20.5V20.5ZM12 19.5C12.7911 19.5 13.5645 19.2654 14.2223 18.8259C14.8801 18.3864 15.3928 17.7616 15.6955 17.0307C15.9983 16.2998 16.0775 15.4956 15.9231 14.7196C15.7688 13.9437 15.3878 13.231 14.8284 12.6716C14.269 12.1122 13.5563 11.7312 12.7804 11.5769C12.0044 11.4225 11.2002 11.5017 10.4693 11.8045C9.73836 12.1072 9.11365 12.6199 8.67412 13.2777C8.2346 13.9355 8 14.7089 8 15.5C8 16.5609 8.42143 17.5783 9.17157 18.3284C9.92172 19.0786 10.9391 19.5 12 19.5ZM12 13.5C12.3956 13.5 12.7822 13.6173 13.1111 13.8371C13.44 14.0568 13.6964 14.3692 13.8478 14.7346C13.9991 15.1001 14.0387 15.5022 13.9616 15.8902C13.8844 16.2781 13.6939 16.6345 13.4142 16.9142C13.1345 17.1939 12.7781 17.3844 12.3902 17.4616C12.0022 17.5387 11.6001 17.4991 11.2346 17.3478C10.8692 17.1964 10.5568 16.94 10.3371 16.6111C10.1173 16.2822 10 15.8956 10 15.5C10 14.9696 10.2107 14.4609 10.5858 14.0858C10.9609 13.7107 11.4696 13.5 12 13.5V13.5Z"
+                            x-bind:fill="openTab === 1 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M28 19.5V28.5H4V8.5H16V6.5H4C3.46957 6.5 2.96086 6.71071 2.58579 7.08579C2.21071 7.46086 2 7.96957 2 8.5V28.5C2 29.0304 2.21071 29.5391 2.58579 29.9142C2.96086 30.2893 3.46957 30.5 4 30.5H28C28.5304 30.5 29.0391 30.2893 29.4142 29.9142C29.7893 29.5391 30 29.0304 30 28.5V19.5H28Z"
+                            x-bind:fill="openTab === 1 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M20 19.5H26V21.5H20V19.5ZM22 23.5H26V25.5H22V23.5ZM32 10.5V8.5H29.899C29.77 7.87402 29.5215 7.27881 29.167 6.747L30.657 5.257L29.243 3.843L27.753 5.333C27.2212 4.97851 26.626 4.72997 26 4.601V2.5H24V4.601C23.374 4.72997 22.7788 4.97851 22.247 5.333L20.757 3.843L19.343 5.257L20.833 6.747C20.4785 7.27881 20.23 7.87402 20.101 8.5H18V10.5H20.101C20.23 11.126 20.4785 11.7212 20.833 12.253L19.343 13.743L20.757 15.157L22.247 13.667C22.7788 14.0215 23.374 14.27 24 14.399V16.5H26V14.399C26.626 14.27 27.2212 14.0215 27.753 13.667L29.243 15.157L30.657 13.743L29.167 12.253C29.5215 11.7212 29.77 11.126 29.899 10.5H32ZM25 12.5C24.4067 12.5 23.8266 12.3241 23.3333 11.9944C22.8399 11.6648 22.4554 11.1962 22.2284 10.6481C22.0013 10.0999 21.9419 9.49667 22.0576 8.91473C22.1734 8.33279 22.4591 7.79824 22.8787 7.37868C23.2982 6.95912 23.8328 6.6734 24.4147 6.55764C24.9967 6.44189 25.5999 6.5013 26.1481 6.72836C26.6962 6.95542 27.1648 7.33994 27.4944 7.83329C27.8241 8.32664 28 8.90666 28 9.5C27.9992 10.2954 27.6829 11.058 27.1204 11.6204C26.558 12.1829 25.7954 12.4992 25 12.5V12.5Z"
+                            x-bind:fill="openTab === 1 ? '#399AB3': '#173E48'" />
+                    </svg>
+                    <span class="px-2"> Gestion du personnel</span>
+                </li>
+                <li class="tab-item cursor-pointer" @click="openTab = 2"
+                    :class="openTab === 2 ? activeClass: inactiveClass">
+                    <svg class="ml-2" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 20.5H9C8.20435 20.5 7.44129 20.8161 6.87868 21.3787C6.31607 21.9413 6 22.7044 6 23.5V25.5H8V23.5C8 23.2348 8.10536 22.9804 8.29289 22.7929C8.48043 22.6054 8.73478 22.5 9 22.5H15C15.2652 22.5 15.5196 22.6054 15.7071 22.7929C15.8946 22.9804 16 23.2348 16 23.5V25.5H18V23.5C18 22.7044 17.6839 21.9413 17.1213 21.3787C16.5587 20.8161 15.7956 20.5 15 20.5ZM12 19.5C12.7911 19.5 13.5645 19.2654 14.2223 18.8259C14.8801 18.3864 15.3928 17.7616 15.6955 17.0307C15.9983 16.2998 16.0775 15.4956 15.9231 14.7196C15.7688 13.9437 15.3878 13.231 14.8284 12.6716C14.269 12.1122 13.5563 11.7312 12.7804 11.5769C12.0044 11.4225 11.2002 11.5017 10.4693 11.8045C9.73836 12.1072 9.11365 12.6199 8.67412 13.2777C8.2346 13.9355 8 14.7089 8 15.5C8 16.5609 8.42143 17.5783 9.17157 18.3284C9.92172 19.0786 10.9391 19.5 12 19.5ZM12 13.5C12.3956 13.5 12.7822 13.6173 13.1111 13.8371C13.44 14.0568 13.6964 14.3692 13.8478 14.7346C13.9991 15.1001 14.0387 15.5022 13.9616 15.8902C13.8844 16.2781 13.6939 16.6345 13.4142 16.9142C13.1345 17.1939 12.7781 17.3844 12.3902 17.4616C12.0022 17.5387 11.6001 17.4991 11.2346 17.3478C10.8692 17.1964 10.5568 16.94 10.3371 16.6111C10.1173 16.2822 10 15.8956 10 15.5C10 14.9696 10.2107 14.4609 10.5858 14.0858C10.9609 13.7107 11.4696 13.5 12 13.5Z"
+                            x-bind:fill="openTab === 2 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M28 19.5V28.5H4V8.5H16V6.5H4C3.46957 6.5 2.96086 6.71071 2.58579 7.08579C2.21071 7.46086 2 7.96957 2 8.5V28.5C2 29.0304 2.21071 29.5391 2.58579 29.9142C2.96086 30.2893 3.46957 30.5 4 30.5H28C28.5304 30.5 29.0391 30.2893 29.4142 29.9142C29.7893 29.5391 30 29.0304 30 28.5V19.5H28Z"
+                            x-bind:fill="openTab === 2 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M20 19.5H26V21.5H20V19.5ZM22 23.5H26V25.5H22V23.5ZM32 10.5V8.5H29.899C29.77 7.87402 29.5215 7.27881 29.167 6.747L30.657 5.257L29.243 3.843L27.753 5.333C27.2212 4.97851 26.626 4.72997 26 4.601V2.5H24V4.601C23.374 4.72997 22.7788 4.97851 22.247 5.333L20.757 3.843L19.343 5.257L20.833 6.747C20.4785 7.27881 20.23 7.87402 20.101 8.5H18V10.5H20.101C20.23 11.126 20.4785 11.7212 20.833 12.253L19.343 13.743L20.757 15.157L22.247 13.667C22.7788 14.0215 23.374 14.27 24 14.399V16.5H26V14.399C26.626 14.27 27.2212 14.0215 27.753 13.667L29.243 15.157L30.657 13.743L29.167 12.253C29.5215 11.7212 29.77 11.126 29.899 10.5H32ZM25 12.5C24.4067 12.5 23.8266 12.3241 23.3333 11.9944C22.8399 11.6648 22.4554 11.1962 22.2284 10.6481C22.0013 10.0999 21.9419 9.49667 22.0576 8.91473C22.1734 8.33279 22.4591 7.79824 22.8787 7.37868C23.2982 6.95912 23.8328 6.6734 24.4147 6.55764C24.9967 6.44189 25.5999 6.5013 26.1481 6.72836C26.6962 6.95542 27.1648 7.33994 27.4944 7.83329C27.8241 8.32664 28 8.90666 28 9.5C27.9992 10.2954 27.6829 11.058 27.1204 11.6204C26.558 12.1829 25.7954 12.4992 25 12.5Z"
+                            x-bind:fill="openTab === 2 ? '#399AB3': '#173E48'" />
+                    </svg>
+                    <span class="px-2"> Congés et absences </span>
+                </li>
+                <li class="tab-item cursor-pointer" @click="openTab = 3"
+                    :class="openTab === 3 ? activeClass: inactiveClass">
+                    <svg class="ml-2" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 20.5H9C8.20435 20.5 7.44129 20.8161 6.87868 21.3787C6.31607 21.9413 6 22.7044 6 23.5V25.5H8V23.5C8 23.2348 8.10536 22.9804 8.29289 22.7929C8.48043 22.6054 8.73478 22.5 9 22.5H15C15.2652 22.5 15.5196 22.6054 15.7071 22.7929C15.8946 22.9804 16 23.2348 16 23.5V25.5H18V23.5C18 22.7044 17.6839 21.9413 17.1213 21.3787C16.5587 20.8161 15.7956 20.5 15 20.5ZM12 19.5C12.7911 19.5 13.5645 19.2654 14.2223 18.8259C14.8801 18.3864 15.3928 17.7616 15.6955 17.0307C15.9983 16.2998 16.0775 15.4956 15.9231 14.7196C15.7688 13.9437 15.3878 13.231 14.8284 12.6716C14.269 12.1122 13.5563 11.7312 12.7804 11.5769C12.0044 11.4225 11.2002 11.5017 10.4693 11.8045C9.73836 12.1072 9.11365 12.6199 8.67412 13.2777C8.2346 13.9355 8 14.7089 8 15.5C8 16.5609 8.42143 17.5783 9.17157 18.3284C9.92172 19.0786 10.9391 19.5 12 19.5ZM12 13.5C12.3956 13.5 12.7822 13.6173 13.1111 13.8371C13.44 14.0568 13.6964 14.3692 13.8478 14.7346C13.9991 15.1001 14.0387 15.5022 13.9616 15.8902C13.8844 16.2781 13.6939 16.6345 13.4142 16.9142C13.1345 17.1939 12.7781 17.3844 12.3902 17.4616C12.0022 17.5387 11.6001 17.4991 11.2346 17.3478C10.8692 17.1964 10.5568 16.94 10.3371 16.6111C10.1173 16.2822 10 15.8956 10 15.5C10 14.9696 10.2107 14.4609 10.5858 14.0858C10.9609 13.7107 11.4696 13.5 12 13.5Z"
+                            x-bind:fill="openTab === 3 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M28 19.5V28.5H4V8.5H16V6.5H4C3.46957 6.5 2.96086 6.71071 2.58579 7.08579C2.21071 7.46086 2 7.96957 2 8.5V28.5C2 29.0304 2.21071 29.5391 2.58579 29.9142C2.96086 30.2893 3.46957 30.5 4 30.5H28C28.5304 30.5 29.0391 30.2893 29.4142 29.9142C29.7893 29.5391 30 29.0304 30 28.5V19.5H28Z"
+                            x-bind:fill="openTab === 3 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M20 19.5H26V21.5H20V19.5ZM22 23.5H26V25.5H22V23.5ZM32 10.5V8.5H29.899C29.77 7.87402 29.5215 7.27881 29.167 6.747L30.657 5.257L29.243 3.843L27.753 5.333C27.2212 4.97851 26.626 4.72997 26 4.601V2.5H24V4.601C23.374 4.72997 22.7788 4.97851 22.247 5.333L20.757 3.843L19.343 5.257L20.833 6.747C20.4785 7.27881 20.23 7.87402 20.101 8.5H18V10.5H20.101C20.23 11.126 20.4785 11.7212 20.833 12.253L19.343 13.743L20.757 15.157L22.247 13.667C22.7788 14.0215 23.374 14.27 24 14.399V16.5H26V14.399C26.626 14.27 27.2212 14.0215 27.753 13.667L29.243 15.157L30.657 13.743L29.167 12.253C29.5215 11.7212 29.77 11.126 29.899 10.5H32ZM25 12.5C24.4067 12.5 23.8266 12.3241 23.3333 11.9944C22.8399 11.6648 22.4554 11.1962 22.2284 10.6481C22.0013 10.0999 21.9419 9.49667 22.0576 8.91473C22.1734 8.33279 22.4591 7.79824 22.8787 7.37868C23.2982 6.95912 23.8328 6.6734 24.4147 6.55764C24.9967 6.44189 25.5999 6.5013 26.1481 6.72836C26.6962 6.95542 27.1648 7.33994 27.4944 7.83329C27.8241 8.32664 28 8.90666 28 9.5C27.9992 10.2954 27.6829 11.058 27.1204 11.6204C26.558 12.1829 25.7954 12.4992 25 12.5Z"
+                            x-bind:fill="openTab === 3 ? '#399AB3': '#173E48'" />
+                    </svg>
+                    <span class="px-2">Notes de frais</span>
+                </li>
+                <li class="tab-item cursor-pointer" @click="openTab = 4"
+                    :class="openTab === 4 ? activeClass: inactiveClass">
+                    <svg class="ml-2" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 20.5H9C8.20435 20.5 7.44129 20.8161 6.87868 21.3787C6.31607 21.9413 6 22.7044 6 23.5V25.5H8V23.5C8 23.2348 8.10536 22.9804 8.29289 22.7929C8.48043 22.6054 8.73478 22.5 9 22.5H15C15.2652 22.5 15.5196 22.6054 15.7071 22.7929C15.8946 22.9804 16 23.2348 16 23.5V25.5H18V23.5C18 22.7044 17.6839 21.9413 17.1213 21.3787C16.5587 20.8161 15.7956 20.5 15 20.5ZM12 19.5C12.7911 19.5 13.5645 19.2654 14.2223 18.8259C14.8801 18.3864 15.3928 17.7616 15.6955 17.0307C15.9983 16.2998 16.0775 15.4956 15.9231 14.7196C15.7688 13.9437 15.3878 13.231 14.8284 12.6716C14.269 12.1122 13.5563 11.7312 12.7804 11.5769C12.0044 11.4225 11.2002 11.5017 10.4693 11.8045C9.73836 12.1072 9.11365 12.6199 8.67412 13.2777C8.2346 13.9355 8 14.7089 8 15.5C8 16.5609 8.42143 17.5783 9.17157 18.3284C9.92172 19.0786 10.9391 19.5 12 19.5ZM12 13.5C12.3956 13.5 12.7822 13.6173 13.1111 13.8371C13.44 14.0568 13.6964 14.3692 13.8478 14.7346C13.9991 15.1001 14.0387 15.5022 13.9616 15.8902C13.8844 16.2781 13.6939 16.6345 13.4142 16.9142C13.1345 17.1939 12.7781 17.3844 12.3902 17.4616C12.0022 17.5387 11.6001 17.4991 11.2346 17.3478C10.8692 17.1964 10.5568 16.94 10.3371 16.6111C10.1173 16.2822 10 15.8956 10 15.5C10 14.9696 10.2107 14.4609 10.5858 14.0858C10.9609 13.7107 11.4696 13.5 12 13.5Z"
+                            x-bind:fill="openTab === 4 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M28 19.5V28.5H4V8.5H16V6.5H4C3.46957 6.5 2.96086 6.71071 2.58579 7.08579C2.21071 7.46086 2 7.96957 2 8.5V28.5C2 29.0304 2.21071 29.5391 2.58579 29.9142C2.96086 30.2893 3.46957 30.5 4 30.5H28C28.5304 30.5 29.0391 30.2893 29.4142 29.9142C29.7893 29.5391 30 29.0304 30 28.5V19.5H28Z"
+                            x-bind:fill="openTab === 4 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M20 19.5H26V21.5H20V19.5ZM22 23.5H26V25.5H22V23.5ZM32 10.5V8.5H29.899C29.77 7.87402 29.5215 7.27881 29.167 6.747L30.657 5.257L29.243 3.843L27.753 5.333C27.2212 4.97851 26.626 4.72997 26 4.601V2.5H24V4.601C23.374 4.72997 22.7788 4.97851 22.247 5.333L20.757 3.843L19.343 5.257L20.833 6.747C20.4785 7.27881 20.23 7.87402 20.101 8.5H18V10.5H20.101C20.23 11.126 20.4785 11.7212 20.833 12.253L19.343 13.743L20.757 15.157L22.247 13.667C22.7788 14.0215 23.374 14.27 24 14.399V16.5H26V14.399C26.626 14.27 27.2212 14.0215 27.753 13.667L29.243 15.157L30.657 13.743L29.167 12.253C29.5215 11.7212 29.77 11.126 29.899 10.5H32ZM25 12.5C24.4067 12.5 23.8266 12.3241 23.3333 11.9944C22.8399 11.6648 22.4554 11.1962 22.2284 10.6481C22.0013 10.0999 21.9419 9.49667 22.0576 8.91473C22.1734 8.33279 22.4591 7.79824 22.8787 7.37868C23.2982 6.95912 23.8328 6.6734 24.4147 6.55764C24.9967 6.44189 25.5999 6.5013 26.1481 6.72836C26.6962 6.95542 27.1648 7.33994 27.4944 7.83329C27.8241 8.32664 28 8.90666 28 9.5C27.9992 10.2954 27.6829 11.058 27.1204 11.6204C26.558 12.1829 25.7954 12.4992 25 12.5Z"
+                            x-bind:fill="openTab === 4 ? '#399AB3': '#173E48'" />
+                    </svg>
+                    <span class="px-2">Accomptes et avances</span>
+                </li>
+                <li class="tab-item cursor-pointer" @click="openTab = 5"
+                    :class="openTab === 5 ? activeClass: inactiveClass">
+                    <svg class="ml-2" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 20.5H9C8.20435 20.5 7.44129 20.8161 6.87868 21.3787C6.31607 21.9413 6 22.7044 6 23.5V25.5H8V23.5C8 23.2348 8.10536 22.9804 8.29289 22.7929C8.48043 22.6054 8.73478 22.5 9 22.5H15C15.2652 22.5 15.5196 22.6054 15.7071 22.7929C15.8946 22.9804 16 23.2348 16 23.5V25.5H18V23.5C18 22.7044 17.6839 21.9413 17.1213 21.3787C16.5587 20.8161 15.7956 20.5 15 20.5ZM12 19.5C12.7911 19.5 13.5645 19.2654 14.2223 18.8259C14.8801 18.3864 15.3928 17.7616 15.6955 17.0307C15.9983 16.2998 16.0775 15.4956 15.9231 14.7196C15.7688 13.9437 15.3878 13.231 14.8284 12.6716C14.269 12.1122 13.5563 11.7312 12.7804 11.5769C12.0044 11.4225 11.2002 11.5017 10.4693 11.8045C9.73836 12.1072 9.11365 12.6199 8.67412 13.2777C8.2346 13.9355 8 14.7089 8 15.5C8 16.5609 8.42143 17.5783 9.17157 18.3284C9.92172 19.0786 10.9391 19.5 12 19.5ZM12 13.5C12.3956 13.5 12.7822 13.6173 13.1111 13.8371C13.44 14.0568 13.6964 14.3692 13.8478 14.7346C13.9991 15.1001 14.0387 15.5022 13.9616 15.8902C13.8844 16.2781 13.6939 16.6345 13.4142 16.9142C13.1345 17.1939 12.7781 17.3844 12.3902 17.4616C12.0022 17.5387 11.6001 17.4991 11.2346 17.3478C10.8692 17.1964 10.5568 16.94 10.3371 16.6111C10.1173 16.2822 10 15.8956 10 15.5C10 14.9696 10.2107 14.4609 10.5858 14.0858C10.9609 13.7107 11.4696 13.5 12 13.5Z"
+                            x-bind:fill="openTab === 5 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M28 19.5V28.5H4V8.5H16V6.5H4C3.46957 6.5 2.96086 6.71071 2.58579 7.08579C2.21071 7.46086 2 7.96957 2 8.5V28.5C2 29.0304 2.21071 29.5391 2.58579 29.9142C2.96086 30.2893 3.46957 30.5 4 30.5H28C28.5304 30.5 29.0391 30.2893 29.4142 29.9142C29.7893 29.5391 30 29.0304 30 28.5V19.5H28Z"
+                            x-bind:fill="openTab === 5 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M20 19.5H26V21.5H20V19.5ZM22 23.5H26V25.5H22V23.5ZM32 10.5V8.5H29.899C29.77 7.87402 29.5215 7.27881 29.167 6.747L30.657 5.257L29.243 3.843L27.753 5.333C27.2212 4.97851 26.626 4.72997 26 4.601V2.5H24V4.601C23.374 4.72997 22.7788 4.97851 22.247 5.333L20.757 3.843L19.343 5.257L20.833 6.747C20.4785 7.27881 20.23 7.87402 20.101 8.5H18V10.5H20.101C20.23 11.126 20.4785 11.7212 20.833 12.253L19.343 13.743L20.757 15.157L22.247 13.667C22.7788 14.0215 23.374 14.27 24 14.399V16.5H26V14.399C26.626 14.27 27.2212 14.0215 27.753 13.667L29.243 15.157L30.657 13.743L29.167 12.253C29.5215 11.7212 29.77 11.126 29.899 10.5H32ZM25 12.5C24.4067 12.5 23.8266 12.3241 23.3333 11.9944C22.8399 11.6648 22.4554 11.1962 22.2284 10.6481C22.0013 10.0999 21.9419 9.49667 22.0576 8.91473C22.1734 8.33279 22.4591 7.79824 22.8787 7.37868C23.2982 6.95912 23.8328 6.6734 24.4147 6.55764C24.9967 6.44189 25.5999 6.5013 26.1481 6.72836C26.6962 6.95542 27.1648 7.33994 27.4944 7.83329C27.8241 8.32664 28 8.90666 28 9.5C27.9992 10.2954 27.6829 11.058 27.1204 11.6204C26.558 12.1829 25.7954 12.4992 25 12.5Z"
+                            x-bind:fill="openTab === 5 ? '#399AB3': '#173E48'" />
+                    </svg>
+                    <span class="px-2">Temps de travail</span>
+                </li>
+                <li class="tab-item cursor-pointer" @click="openTab = 6"
+                    :class="openTab === 6 ? activeClass: inactiveClass">
+                    <svg class="ml-2" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 20.5H9C8.20435 20.5 7.44129 20.8161 6.87868 21.3787C6.31607 21.9413 6 22.7044 6 23.5V25.5H8V23.5C8 23.2348 8.10536 22.9804 8.29289 22.7929C8.48043 22.6054 8.73478 22.5 9 22.5H15C15.2652 22.5 15.5196 22.6054 15.7071 22.7929C15.8946 22.9804 16 23.2348 16 23.5V25.5H18V23.5C18 22.7044 17.6839 21.9413 17.1213 21.3787C16.5587 20.8161 15.7956 20.5 15 20.5ZM12 19.5C12.7911 19.5 13.5645 19.2654 14.2223 18.8259C14.8801 18.3864 15.3928 17.7616 15.6955 17.0307C15.9983 16.2998 16.0775 15.4956 15.9231 14.7196C15.7688 13.9437 15.3878 13.231 14.8284 12.6716C14.269 12.1122 13.5563 11.7312 12.7804 11.5769C12.0044 11.4225 11.2002 11.5017 10.4693 11.8045C9.73836 12.1072 9.11365 12.6199 8.67412 13.2777C8.2346 13.9355 8 14.7089 8 15.5C8 16.5609 8.42143 17.5783 9.17157 18.3284C9.92172 19.0786 10.9391 19.5 12 19.5ZM12 13.5C12.3956 13.5 12.7822 13.6173 13.1111 13.8371C13.44 14.0568 13.6964 14.3692 13.8478 14.7346C13.9991 15.1001 14.0387 15.5022 13.9616 15.8902C13.8844 16.2781 13.6939 16.6345 13.4142 16.9142C13.1345 17.1939 12.7781 17.3844 12.3902 17.4616C12.0022 17.5387 11.6001 17.4991 11.2346 17.3478C10.8692 17.1964 10.5568 16.94 10.3371 16.6111C10.1173 16.2822 10 15.8956 10 15.5C10 14.9696 10.2107 14.4609 10.5858 14.0858C10.9609 13.7107 11.4696 13.5 12 13.5Z"
+                            x-bind:fill="openTab === 6 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M28 19.5V28.5H4V8.5H16V6.5H4C3.46957 6.5 2.96086 6.71071 2.58579 7.08579C2.21071 7.46086 2 7.96957 2 8.5V28.5C2 29.0304 2.21071 29.5391 2.58579 29.9142C2.96086 30.2893 3.46957 30.5 4 30.5H28C28.5304 30.5 29.0391 30.2893 29.4142 29.9142C29.7893 29.5391 30 29.0304 30 28.5V19.5H28Z"
+                            x-bind:fill="openTab === 6 ? '#399AB3': '#173E48'" />
+                        <path
+                            d="M20 19.5H26V21.5H20V19.5ZM22 23.5H26V25.5H22V23.5ZM32 10.5V8.5H29.899C29.77 7.87402 29.5215 7.27881 29.167 6.747L30.657 5.257L29.243 3.843L27.753 5.333C27.2212 4.97851 26.626 4.72997 26 4.601V2.5H24V4.601C23.374 4.72997 22.7788 4.97851 22.247 5.333L20.757 3.843L19.343 5.257L20.833 6.747C20.4785 7.27881 20.23 7.87402 20.101 8.5H18V10.5H20.101C20.23 11.126 20.4785 11.7212 20.833 12.253L19.343 13.743L20.757 15.157L22.247 13.667C22.7788 14.0215 23.374 14.27 24 14.399V16.5H26V14.399C26.626 14.27 27.2212 14.0215 27.753 13.667L29.243 15.157L30.657 13.743L29.167 12.253C29.5215 11.7212 29.77 11.126 29.899 10.5H32ZM25 12.5C24.4067 12.5 23.8266 12.3241 23.3333 11.9944C22.8399 11.6648 22.4554 11.1962 22.2284 10.6481C22.0013 10.0999 21.9419 9.49667 22.0576 8.91473C22.1734 8.33279 22.4591 7.79824 22.8787 7.37868C23.2982 6.95912 23.8328 6.6734 24.4147 6.55764C24.9967 6.44189 25.5999 6.5013 26.1481 6.72836C26.6962 6.95542 27.1648 7.33994 27.4944 7.83329C27.8241 8.32664 28 8.90666 28 9.5C27.9992 10.2954 27.6829 11.058 27.1204 11.6204C26.558 12.1829 25.7954 12.4992 25 12.5Z"
+                            x-bind:fill="openTab === 6 ? '#399AB3': '#173E48'" />
+                    </svg>
+                    <span class="px-2">Bulletin de salaire</span>
+                </li>
+            </ul>
+            <div class="mt-16 mb-48">
+                <div x-show="openTab === 1">
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col text-center items-center justify-center space-y-3">
+                            <span class="title-section">
+                                La gestion efficace des congés de vos employés</span>
+                            <span class="subtitle-section"> Nemo enim ipsam voluptatem
+                                quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia </span>
+                            <a class="underline inline-flex" href="#"> En savoir plus
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.02 6L8.61 7.41L13.19 12L8.61 16.59L10.02 18L16.02 12L10.02 6Z"
+                                        fill="#173E48" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="./images/uptimise_screenshot1.png">
+                        </div>
+                    </div>
+                </div>
+                <div x-show="openTab === 2">
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col text-center">
+                            <span class="font-normal text-5xl text-[#173E48] leading-[72px]">La gestion efficace des
+                                congés de vos
+                                employés</span>
+                            <span class="text-primary font-normal text-lg leading-[27px]"> Nemo enim ipsam voluptatem
+                                quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia </span>
+                            <span class="underline"> En savoir plus </span>
+                        </div>
+                        <div>
+                            <img src="./images/uptimise_screenshot1.png">
+                        </div>
+                    </div>
+                </div>
+                <div x-show="openTab === 3">
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col text-center">
+                            <span class="font-normal text-5xl text-[#173E48] leading-[72px]">Tab 3</span>
+                            <span class="text-primary font-normal text-lg leading-[27px]"> Nemo enim ipsam voluptatem
+                                quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia </span>
+                            <span class="underline"> En savoir plus </span>
+                        </div>
+                        <div>
+                            <img src="./images/uptimise_screenshot1.png">
+                        </div>
+                    </div>
+                </div>
+                <div x-show="openTab === 4">
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col text-center">
+                            <span class="font-normal text-5xl text-[#173E48] leading-[72px]">Accomptes et avances de vos
+                                employés</span>
+                            <span class="text-primary font-normal text-lg leading-[27px]"> Nemo enim ipsam voluptatem
+                                quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia </span>
+                            <span class="underline"> En savoir plus </span>
+                        </div>
+                        <div>
+                            <img src="./images/uptimise_screenshot1.png">
+                        </div>
+                    </div>
+                </div>
+                <div x-show="openTab === 5">
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col text-center">
+                            <span class="font-normal text-5xl text-[#173E48] leading-[72px]">La gestion efficace du
+                                temps de travail de vos employés</span>
+                            <span class="text-primary font-normal text-lg leading-[27px]">
+                                Nemo enim ipsam voluptatem quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia
+                            </span>
+                            <span class="underline"> En savoir plus </span>
+                        </div>
+                        <div>
+                            <img src="./images/uptimise_screenshot1.png">
+                        </div>
+                    </div>
+                </div>
+                <div x-show="openTab === 6">
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col text-center">
+                            <span class="font-normal text-5xl text-[#173E48] leading-[72px]"> Bulletin de salaire</span>
+                            <span class="text-primary font-normal text-lg leading-[27px]"> Nemo enim ipsam voluptatem
+                                quia voluptas
+                                sit aspernatur aut odit aut fugit, sed quia </span>
+                            <span class="underline"> En savoir plus </span>
+                        </div>
+                        <div>
+                            <img src="./images/uptimise_screenshot1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+    <section>
+        <div class="text-center bg-bgcolorv2 mx-32">
+            <div>
+                <span class="title-section"> Tout le monde est gagnant </span>
+            </div>
+            <div class="grid grid-cols-4 gap-12 pl-5 mt-28 mx-20">
+                <div class="flex flex-col text-left border-ssm border-solid border-primary card-radius bg-white">
+                    <div>
+                        <span class="bg-primary card-title-font pr-6 inline-block rounded-r-[55px] px-3 sm-neg-marg">
+                            Collaborateur
+                        </span>
+
+                    </div>
+                    <div class="px-3 py-10">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                    </div>
+                    <div class="px-3 text-primary pb-6">
+                        <a class="underline inline-flex" href="#"> En savoir plus
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.02 6L8.61 7.41L13.19 12L8.61 16.59L10.02 18L16.02 12L10.02 6Z"
+                                    fill="#399AB3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col text-left border-ssm border-solid border-primary card-radius bg-white">
+                    <div>
+                        <span class="bg-primary card-title-font pr-6 inline-block rounded-r-[55px] px-3 sm-neg-marg">
+                            Ressources Humaines
+                        </span>
+
+                    </div>
+                    <div class="px-3 py-10">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                    </div>
+                    <div class="px-3 text-primary pb-6">
+                        <a class="underline inline-flex" href="#"> En savoir plus
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.02 6L8.61 7.41L13.19 12L8.61 16.59L10.02 18L16.02 12L10.02 6Z"
+                                    fill="#399AB3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col text-left border-ssm border-solid border-primary card-radius bg-white">
+                    <div>
+                        <span class="bg-primary card-title-font pr-6 inline-block rounded-r-[55px] px-3  sm-neg-marg">
+                            Comptable
+                        </span>
+
+                    </div>
+                    <div class="px-3 py-10">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                    </div>
+                    <div class="px-3 text-primary pb-6">
+                        <a class="underline inline-flex" href="#"> En savoir plus
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.02 6L8.61 7.41L13.19 12L8.61 16.59L10.02 18L16.02 12L10.02 6Z"
+                                    fill="#399AB3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col text-left border-ssm border-solid border-primary card-radius bg-white">
+                    <div>
+                        <span class="bg-primary card-title-font pr-6 inline-block rounded-r-[55px] px-3 sm-neg-marg">
+                            Dirigeant
+                        </span>
+
+                    </div>
+                    <div class="px-3 py-10">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                    </div>
+                    <div class="px-3 text-primary pb-6">
+                        <a class="underline inline-flex" href="#"> En savoir plus
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.02 6L8.61 7.41L13.19 12L8.61 16.59L10.02 18L16.02 12L10.02 6Z"
+                                    fill="#399AB3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pt-10">
+        <div class="flex card-shadow">
+            <img src="./images/image1.png" />
+            <div class="flex flex-col">
+                <div class="mx-8 mt-10">
+                    <span class="carousel-title"> Patrick Monroe </span> <br>
+                    <span class="carousel-subtitle"> Directeur Coca-Cola </span>
+                </div>
+                <div class="mx-8 mt-10 text-justify">
+                    <svg width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.86 18.76C11.3333 19.1933 12.46 20.0167 13.24 21.23C14.1067 22.3567 14.54 23.7433 14.54 25.39C14.54 27.47 13.89 29.16 12.59 30.46C11.29 31.76 9.68667 32.41 7.78 32.41C5.7 32.41 4.01 31.76 2.71 30.46C1.49667 29.0733 0.89 27.3833 0.89 25.39C0.89 24.35 0.976667 23.3533 1.15 22.4C1.41 21.36 1.88667 19.8867 2.58 17.98L8.04 0.0399944H14.28L9.86 18.76ZM31.96 18.76C33.4333 19.1933 34.56 20.0167 35.34 21.23C36.2067 22.3567 36.64 23.7433 36.64 25.39C36.64 27.47 35.99 29.16 34.69 30.46C33.39 31.76 31.7867 32.41 29.88 32.41C27.8 32.41 26.11 31.76 24.81 30.46C23.5967 29.0733 22.99 27.3833 22.99 25.39C22.99 24.35 23.0767 23.3533 23.25 22.4C23.51 21.36 23.9867 19.8867 24.68 17.98L30.14 0.0399944H36.38L31.96 18.76Z"
+                            fill="#ECF6F9" />
+                    </svg> <br>
+                   <span class="py-10">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                    fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                    fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                    fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                   </span>
+                    <svg class="float-right" width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M27.14 18.76C25.6667 19.1933 24.54 20.0167 23.76 21.23C22.8933 22.3567 22.46 23.7433 22.46 25.39C22.46 27.47 23.11 29.16 24.41 30.46C25.71 31.76 27.3133 32.41 29.22 32.41C31.3 32.41 32.99 31.76 34.29 30.46C35.5033 29.0733 36.11 27.3833 36.11 25.39C36.11 24.35 36.0233 23.3533 35.85 22.4C35.59 21.36 35.1133 19.8867 34.42 17.98L28.96 0.0399944H22.72L27.14 18.76ZM5.04 18.76C3.56666 19.1933 2.44 20.0167 1.66 21.23C0.793332 22.3567 0.359999 23.7433 0.359999 25.39C0.359999 27.47 1.01 29.16 2.31 30.46C3.61 31.76 5.21333 32.41 7.12 32.41C9.2 32.41 10.89 31.76 12.19 30.46C13.4033 29.0733 14.01 27.3833 14.01 25.39C14.01 24.35 13.9233 23.3533 13.75 22.4C13.49 21.36 13.0133 19.8867 12.32 17.98L6.86 0.0399944H0.619999L5.04 18.76Z"
+                            fill="#ECF6F9" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    @apply font-Poppins
+}
+
+.btn-primary{
+    @apply text-[#FFFF] bg-primary p-3 rounded-md
+}
+
+.nav-item{
+    @apply font-Montserrat font-bold text-base text-center not-italic -tracking-[.015em] leading-[18px] cursor-pointer
+
+    /*
+     //styleName: navbar component;
+        font-family: Montserrat;  --> font-Montserrat
+        font-size: 15px;          --> text-base
+        font-style: normal;       --> not-italic
+        font-weight: 700;         --> font-bold
+        line-height: 18px;        --> leading-[18px]
+        letter-spacing: -0.015em; --> -tracking-[.015em]
+        text-align: center;       --> text-center
+
+    */
+}
+
+.body-h4{
+    @apply font-Montserrat font-bold text-2xl not-italic -tracking-[.015em] leading-[36px] text-[#173E48]
+}
+
+.body-p{
+    @apply font-Montserrat font-normal text-base leading-[30px] text-[#173E48]
+}
+
+.q-body{
+    @apply ml-10
+}
+
+.tab-item{
+    @apply flex justify-center items-center py-2 my-6  font-medium text-sm space-x-2 rounded
+}
+
+.tab-item-active{
+    @apply text-primary bg-[#F9FCFD]
+}
+
+.subtitle-section{
+    @apply text-primary font-semibold text-lg leading-[27px]
+}
+
+.title-section{
+    @apply font-normal text-5xl text-[#173E48] leading-[72px]
+}
+
+.card-title-font{
+    @apply font-Montserrat font-bold text-base not-italic -tracking-[.015em] leading-[36px] text-white
+}
+
+.card-content-font{
+    @apply font-Montserrat font-normal text-base not-italic
+}
+.sm-neg-marg{
+    @apply -mt-[0.25px]
+}
+.card-radius{
+    border-radius: 0px 19px 19px 19px;
+}
+.border-ssm{
+   @apply border-[1px];
+} 
+
+.carousel-title{
+    @apply font-Montserrat font-bold text-2xl not-italic -tracking-[.015em] leading-[36px] text-primary
+}
+
+.carousel-subtitle{
+    @apply font-light text-sm not-italic 
+}
+
+
+.card-shadow{
+    box-shadow: 0px 0px 14px 0px #00000040;
+}
